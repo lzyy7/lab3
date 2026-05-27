@@ -1,0 +1,50 @@
+name: Feature Request
+description: Suggest a new feature
+title: "[Feature]: "
+labels: ["enhancement"]
+assignees: []
+body:
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      placeholder: your@email.com
+    validations:
+      required: false
+  - type: input
+    id: name
+    attributes:
+      label: Your Name
+      placeholder: Your full name
+    validations:
+      required: true
+  - type: dropdown
+    id: request-type
+    attributes:
+      label: Type of Request
+      options:
+        - New Feature
+        - Improvement
+        - Other
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Suggested OS
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Cross-platform
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Feature Details
+      placeholder: Describe your feature request in detail...
+    validations:
+      required: true
